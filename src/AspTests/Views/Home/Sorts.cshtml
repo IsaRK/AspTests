@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Sorts";
+}
+<script src="~/js/sorts.js"></script>
+
+<label><input class="withDuplicates" type="checkbox" />With Duplicates ?</label>
+<input type="button" size="30" onclick="generateNumber()" value="Generate" />
+
+<div id="chartContainer" style="height: 500px; width: 100%;"></div>
+<div>
+    <input type="button" size="30" onclick="bubbleSort()" value="BubbleSort" />
+    <input type="button" size="30" onclick="selectionSort()" value="SelectionSort" />
+</div>
+<div>
+    <textarea id="timeComplexity" rows='3'></textarea>
+    <textarea id="spaceComplexity" rows='3'></textarea>
+</div>

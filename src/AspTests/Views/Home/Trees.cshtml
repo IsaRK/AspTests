@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Trees";
+}
+
+<script src="~/js/trees.js"></script>
+
+<style type="text/css">
+    #mynetwork {
+        width: 600px;
+        height: 400px;
+        border: 1px solid lightgray;
+    }
+</style>
+<div id="mynetwork"></div>
+<input id="sizeTree" type="number" size="30" value="20"/>
+<input type="button" size="30" onclick="generateBinarySearchTree()" value="Generate Binary Search Tree" />
